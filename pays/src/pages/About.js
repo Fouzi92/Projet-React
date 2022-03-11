@@ -3,29 +3,41 @@ import React from "react";
 const About = () => {
   return (
     <div>
-      <h1>À propos</h1> <br />
+      <h1>À propos</h1>
+      <br />
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos vel,
-        aliquam dolore pariatur adipisci architecto corrupti, consectetur nobis
-        asperiores excepturi accusamus totam corporis officiis repudiandae odio
-        omnis. Soluta, quas! Dolor, repellendus, amet quos debitis officia ipsum
-        maiores quaerat ab odit earum mollitia tenetur nam soluta perferendis
-        architecto officiis quis animi est impedit cupiditate suscipit itaque
-        laboriosam ullam? Ad, nihil hic!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, similique
+        fuga. Nisi numquam maiores quisquam facere eaque repudiandae, impedit
+        repellendus velit nulla quaerat, laborum dicta illo omnis odit? Fugiat
+        dolor tempora vel consequuntur nihil quidem sapiente rem quia, dolorem
+        nisi soluta ipsum sequi corporis, sed unde architecto enim laborum
+        praesentium nesciunt obcaecati magnam ipsa itaque quas velit. Optio
+        reiciendis dolore rerum voluptatum natus fugiat totam possimus obcaecati
+        debitis, placeat delectus corrupti sit odit voluptatibus ab quaerat,
+        aperiam minima a ducimus aliquam iste sapiente omnis? Optio eveniet
+        debitis molestiae quos quibusdam. Ratione corporis atque dolorem ipsam
+        maxime tempore voluptatum provident facere.
       </p>
       <br />
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto dolorum
-        omnis, tempore temporibus dignissimos aperiam veniam similique odio
-        voluptas doloremque, illum pariatur ad nam placeat perferendis error!
-        Officiis excepturi atque ipsum voluptate alias veniam praesentium omnis
-        repellendus magnam, iure ratione vero. Minus dolore asperiores
-        consequatur dignissimos rem illum necessitatibus neque eveniet atque.
-        Suscipit aliquid atque ipsa cum est. Eos officia quos commodi possimus
-        sint quidem itaque repellat aut distinctio odio error voluptatem, nisi
-        assumenda iste dolores maiores tempora voluptatum unde alias fuga! Sunt
-        doloribus suscipit unde rerum, tempora eum modi sapiente maxime,
-        laudantium non tenetur cum est temporibus magni. Iusto?
+        {" "}
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas, error
+        vero! Reiciendis dolore nam vero soluta odio amet at repudiandae commodi
+        debitis tempore natus hic consectetur et quisquam optio, molestiae
+        itaque minus nostrum aliquam rerum in? Repudiandae accusamus sed alias
+        at, voluptas quibusdam ab iure sunt mollitia soluta sit quasi nobis
+        distinctio quaerat quos, necessitatibus rerum vel? Laudantium fuga
+        corporis nemo ut asperiores officia voluptatibus maxime inventore modi
+        molestiae dolores praesentium, libero quam nulla iure? Omnis non
+        accusantium recusandae quisquam, molestias excepturi alias eveniet!
+        Aliquam id, sequi voluptate tempore distinctio molestiae earum minus.
+        Nesciunt reprehenderit cumque voluptatum, dicta delectus veniam
+        aspernatur architecto mollitia explicabo commodi sint iste, ipsa,
+        debitis quo eveniet consectetur aut quibusdam deleniti ab at. Nostrum
+        dicta aliquam ullam, hic, nam fugit neque illum maiores provident
+        voluptates officiis reprehenderit tempore voluptatem harum doloremque et
+        suscipit consequatur. Sapiente rerum repellendus ducimus ex omnis.
+        Corrupti facilis eum tenetur quidem beatae.
       </p>
     </div>
   );
