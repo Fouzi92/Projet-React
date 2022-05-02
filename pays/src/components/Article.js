@@ -23,13 +23,13 @@ const Article = ({ article }) => {
       date: article.date,
       updatedDate: Date.now(),
     };
-    axios.put("http://localhost:3000/articles/" + article.id, data).then(() => {
+    axios.put("http://localhost:3004/articles/" + article.id, data).then(() => {
       setIsEditing(false);
     });
   };
 
   const handleDelete = () => {
-    axios.delete("http://localhost:300/articles/" + article.id);
+    axios.delete("http://localhost:3004/articles/" + article.id);
     window.location.reload();
   };
 
@@ -54,7 +54,7 @@ const Article = ({ article }) => {
 
       <div className="btn-container">
         {isEditing ? (
-          <button onClick={() => setIsEditing(false)}>Valider</button>
+          <button onClick={() => handleEdit()}>Valider</button>
         ) : (
           <button onClick={() => setIsEditing(true)}>Edit</button>
         )}
