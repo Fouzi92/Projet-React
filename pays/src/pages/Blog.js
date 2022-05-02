@@ -6,6 +6,7 @@ import Navigation from "../components/Navigation";
 
 const Blog = () => {
   const [blogData, setBlogData] = useState([]);
+  const [author, setAuthor] = useState("");
   const [content, setContent] = useState("");
   const [error, setError] = useState(false);
 
@@ -22,6 +23,11 @@ const Blog = () => {
     if (content.length < 140) {
       setError(true);
     } else {
+      axios.post("http://localhost:3004/articles", {
+        author: "author",
+        content,
+        date: Date.now(),
+      });
       setError(false);
     }
   };
@@ -32,7 +38,11 @@ const Blog = () => {
       <Navigation />
       <h1>Logo</h1>
       <form onSubmit={(e) => handleSubmit(e)}>
-        <input type="text" placeholder="Nom" />
+        <input
+          type="text"
+          placeholder="Nom"
+          onChange={(e) => setAuthor(e.target.value)}
+        />
         <textarea
           style={{ border: error ? "1px solid red" : "1px solid #61dafb" }}
           placeholder="Message"
@@ -42,9 +52,11 @@ const Blog = () => {
         <input type="submit" value="Envoyer" />
       </form>
       <ul>
-        {blogData.map((article) => (
-          <Article key={article.id} article={article} />
-        ))}
+        {blogData
+          .sort((a, b) => b.date - a.date)
+          .map((article) => (
+            <Article key={article.id} article={article} />
+          ))}
       </ul>
     </div>
   );
